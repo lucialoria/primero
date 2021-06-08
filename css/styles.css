@@ -1,5 +1,8 @@
 /* IMPORTS */
 /* VARIABLES */
+a:link, a:visited, a:active {
+  text-decoration: none; }
+
 /*CONDICIONAL*/
 p {
   color: #FFFCF9; }
@@ -24,6 +27,9 @@ main {
   padding: 10px; }
 
 /* NAVBAR */
+.navbar {
+  position: fixed; }
+
 .nav-item:hover {
   transform: scale(1.1);
   transition: .3s; }
@@ -35,6 +41,11 @@ main {
   color: white; }
 
 /* END NAVBAR */
+.main-container {
+  max-width: 70%;
+  margin-left: auto;
+  margin-right: auto; }
+
 .inicio {
   /* display: flex;
     width: 100%;
@@ -44,12 +55,17 @@ h1 {
   font-size: 100px; }
 
 .grid {
-  display: grid;
-  grid-template-columns: 4; }
+  display: flex;
+  justify-content: center;
+  max-width: 1440px; }
   .grid .grid__card {
-    padding: 10px; }
-    .grid .grid__card .grid__card-imagen {
-      width: 100%; }
+    border: solid 1px blanchedalmond;
+    border-radius: 10px;
+    width: 300px;
+    padding: 5px; }
+    .grid .grid__card .grid__card-image {
+      width: 100%;
+      border-radius: 10px; }
 
 .recomended {
   margin: 10px 0;
@@ -59,39 +75,66 @@ h1 {
   margin: 10px 0; }
 
 .main-block {
-  margin: 10px 0;
-  padding: 10px 15px; }
+  display: block;
+  justify-content: center;
+  flex-direction: column; }
 
-.title-container {
+.hero {
   background-image: linear-gradient(to bottom right, white, #FFA6A6);
   padding: 30px 0; }
 
 .navbar {
-  text-align: center; }
+  text-align: center;
+  background: #1B1B1E;
+  width: 100%; }
+  .navbar .navbar-brand {
+    max-width: 80px; }
 
 .titulo {
   font-size: 15vw;
   font-weight: 900;
-  padding: 60px 0;
+  padding: 180px 0 120px 0;
   text-align: center; }
 
 .subtitulo {
-  font-size: 5vw; }
+  font-size: 4vw;
+  text-align: center;
+  padding: 0 0 90px 0; }
 
 h3 {
   margin: 10px 0; }
 
 h2 {
-  font-size: 6vw;
-  margin: 10px 0; }
+  font-size: 4vw;
+  margin: 20px 0 10px 0; }
+
+.post {
+  margin: 30px 0; }
+  .post .post__film-title {
+    color: #ffa6a6;
+    font-weight: 500;
+    font-size: 18px; }
+  .post .post__resume {
+    max-width: 700px;
+    margin: 10px 0; }
+  .post .post__img-post {
+    border-radius: 10px;
+    max-width: 700px; }
+
+.contact-item {
+  margin: 10px 5px 10px 0; }
 
 /* FOOTER*/
 .footer .footer__redes {
   display: flex;
-  justify-content: space-evenly;
   background-color: #ffa6a6;
   color: #1b1b1e;
-  padding: 20px; }
+  padding: 20px;
+  justify-content: center;
+  margin: 50px 0; }
+  .footer .footer__redes .rrss {
+    max-width: 30px;
+    margin: 0 30px; }
 
 /* END FOOTER*/
 /*CONDICIONAL*/

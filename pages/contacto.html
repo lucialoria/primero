@@ -15,7 +15,7 @@
     <header>
         <nav class="navbar navbar-expand-lg navbar-dark">
             <div class="container-fluid align-items-lg-center align-items-start">
-              <a class="navbar-brand" href="#">QV</a>
+              <a href="#"> <img src="../media/LogoRecomendada2-transparente.png" alt="Logo Recomenda2 transparente" class="navbar-brand"></a>
               <div>
                   <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -26,7 +26,7 @@
                         <a class="nav-link" aria-current="page" href="/pagina-de-recomendaciones-loria-bem/index.html">Home</a>
                       </li>
                       <li class="nav-item">
-                        <a class="nav-link active" href="/pagina-de-recomendaciones-loria-bem/pages/cine.html">Cine</a>
+                        <a class="nav-link" href="/pagina-de-recomendaciones-loria-bem/pages/cine.html">Cine</a>
                       </li>
                       <li class="nav-item">
                         <a class="nav-link" href="/pagina-de-recomendaciones-loria-bem/pages/series.html">Series</a>
@@ -38,7 +38,7 @@
                         <a class="nav-link" href="/pagina-de-recomendaciones-loria-bem/pages/videojuegos.html">Videojuegos</a>
                       </li>
                       <li class="nav-item">
-                        <a class="nav-link" href="/pagina-de-recomendaciones-loria-bem/pages/contacto.html">Contacto</a>
+                        <a class="nav-link  active" href="/pagina-de-recomendaciones-loria-bem/pages/contacto.html">Contacto</a>
                       </li>
                       <!-- <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -58,41 +58,46 @@
         
     </header>
     <main>
-      <div class="inicio">
-        <div class="title-container">
-            <h1 class="titulo">¿QUÉ <br> VEO?</h1>
+      
+        <div class="hero">
+          <h1 class="titulo">¿Qué ver?</h1>
+          <p class="subtitulo">Encontrá tu próximo entretenimiento</p>
         </div>
+      
+      <div class="main-container">  
         <h2>Contacto</h2>
         <form action="">
-            <label for="nombre_apellido">Nombre y apellido:</label>
-            <input type="text" name="nombre_apellido">
+            <label for="nombre_apellido" class="contact-item">Nombre y apellido:</label>
+            <input type="text" name="nombre_apellido" class="contact-item">
             <br>
-            <label for="sexo">Sexo</label>
-            <select name="sexo" id="">
+            <label for="sexo" class="contact-item">Sexo</label>
+            <select name="sexo" id="" class="contact-item">
                 <option value="Femenino">Femenino</option>
                 <option value="Masculino">Masculino</option>
                 <option value="Otro">Otro</option>
             </select>
             <br>
-            <label for="mail">Correo electrónico:</label>
-            <input type="text" name="mail">
+            <label for="mail" class="contact-item">Correo electrónico:</label>
+            <input type="text" name="mail" class="contact-item">
             <br>
-            <label for="comentario">Comentario</label>
-            <textarea name="comentario" id="" cols="30" rows="10"></textarea>
-            <div> ¿Querés suscribirte a nuestro news letter?</div>
-            <input type="checkbox" name="acepta" value="1">
+            <label for="comentario"class="contact-item">Comentario</label>
+            <textarea name="comentario" id="" cols="30" rows="10" class="contact-item"></textarea>
+            <div class="d-flex"> 
+              <p class="contact-item">¿Querés suscribirte a nuestro news letter?</p>
+              <input type="checkbox" name="acepta" value="1" class="contact-item">
+            </div>
             <br>
             <input type="submit" name="boton" id="" class="background-red color-white">
             <br>
         </form>
       </div>
+      
     </main>
 
     <footer class="footer">
-
       <div class="footer__redes">
-          <h3>Instagram</h3>
-          <h3>Youtube</h3>
+          <a href="#"><img src="../media/logotipo-de-instagram.png" alt="logo-instagram" class= "rrss"></a>
+          <a href="#"><img src="../media/youtube.png" alt="logo-youtube" class= "rrss"></a>
       </div>
     </footer>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8" crossorigin="anonymous"></script>
